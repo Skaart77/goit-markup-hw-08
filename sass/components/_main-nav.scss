@@ -1,67 +1,70 @@
 
-.menu-container{
+.main-nav{
+  display: flex;
+  align-items: center;
+  
+  }
+  
+  .site-nav{ 
+    display: flex; 
+    margin-left: 93px;
+    
+  & .site-nav__item + .site-nav__item {
+    margin-left: 50px; }
+  }
+    
+
+.menu{
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  
+  padding: 20px;
+  background-color:$PrimaryWhitecolor;
+}
+
+.site-nav, .site-contact{
+ width: 50;
+ height: 60;
+}
+
+.menu-toggle{
+  margin-left: auto;
 }
 
 
 
-
-
-
-
-.main-nav{
- 
-    display: flex;
-    align-items: center;
-    }
     
-    .site-nav{ 
-      display: flex; 
-      margin-left: 93px;
-      
-    & .site-nav__item + .site-nav__item {
-      margin-left: 50px; }
-    }
-      
-    .site-nav{
-      position: absolute;
-  
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color:$PrimaryTextcolor;
-    }
-      
 .site-nav .site-nav__link { 
-        position: relative;
-        display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        
-        color:$PrimaryTextcolor; 
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        
-        transition: color $Cubic;
+      position: relative;
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
       
-      &:hover , &:focus{ color:$AccentColor;text-decoration: none;}
-    }
- 
-.site-nav__link.current::after {
-    content: '';
-    position: absolute;
-    display: blok;
-    width:100%;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    background:$AccentColor;
-    ;
-    border-radius: 2px;
-    }
-        
-.site-nav__link.current { color:$AccentColor;}
+      color:$PrimaryTextcolor; 
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      
+      transition: color $Cubic;
+    
+    &:hover , &:focus{ color:$AccentColor;text-decoration: none;}
+  }
 
-  
+.site-nav__link.current::after {
+  content: '';
+  position: absolute;
+  display: blok;
+  width:100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background:$AccentColor;
+  ;
+  border-radius: 2px;
+  }
+      
+.site-nav__link.current { color:$AccentColor;}

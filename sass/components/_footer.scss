@@ -17,7 +17,12 @@
     }
 
 
- 
+ .footer-nav{
+  @media screen and ( min-width:768px ){
+    display: flex;
+    flex-wrap:wrap;
+  }
+ }
  
  .footer-contact__link{
  
