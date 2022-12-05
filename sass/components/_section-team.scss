@@ -1,0 +1,106 @@
+.section-team{ 
+    background-color: $ThirdBCGcolor;
+    @extend %section;
+
+    &__title { 
+        margin-top: 0;
+        margin-bottom: 50px;
+        
+        color:$PrimaryTextcolor; 
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;}
+  }
+
+.team{
+
+    @media screen and ( min-width:768px )
+  {
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 30px;
+  }
+
+
+    @media screen and ( min-width:1200px )
+  {
+    display: flex;
+    gap: 30px;
+  }
+  
+
+}
+
+.team-user {  
+background-color: $PrimaryWhitecolor;
+border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+&__items
+{ margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and ( man-width:480px )
+  {
+   width: 450px;
+   height: 622px;
+   margin-bottom: 30px;
+  }
+  @media screen and ( max-width:767px )
+  {
+   margin-bottom: 30px;
+  }
+  @media screen and ( min-width:768px )
+  {
+   width: 354px;
+   height: 536px;
+   
+  }
+  @media screen and ( min-width:1200px )
+  {
+   width: 270px;
+   height: 428px;
+  }
+
+}
+
+.team-user__name{ 
+    margin-bottom: 10px;
+    color: $PrimaryTextcolor;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;}
+    
+    
+.team-user__position{
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;}
+
+// Social Networks
+
+ .social-list{
+        display:flex;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 30px; 
+      }
+      
+.social-list__link{ 
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        color: $Clientscolor;
+      
+        transition: color $Cubic , background-color $Cubic; 
+      
+        &:focus , &:hover{border-radius: 50%; background-color:$AccentColor; color: $PrimaryWhitecolor;}
+    }
+      
+.social-list__icon { fill:currentColor; }

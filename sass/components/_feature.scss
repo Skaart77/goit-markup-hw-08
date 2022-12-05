@@ -1,0 +1,107 @@
+.section-feature{ @extend %section;}
+
+.feature__list{
+   
+
+    @media screen and ( min-width:768px )
+    {
+       display: flex;
+       flex-wrap: wrap;
+      
+       
+    }
+    @media screen and ( min-width:1200px )
+  {
+  display: flex;
+  gap: 30px;
+    
+  }
+    
+}
+
+.feature__item{
+    
+    @media screen and ( min-width:480px )
+    {
+      
+    margin-bottom: 30px;
+       
+    }
+    @media screen and ( min-width:768px )
+    {
+        width: 50%;
+        
+        
+    }
+}
+
+.feature__wrapper{
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: $ThirdBCGcolor;
+  width: auto;
+  height: 120px;
+  align-items: center;
+  
+ }
+
+
+.feature__title{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color:$PrimaryTextcolor;
+   
+    @media screen and ( min-width:768px )
+    {
+        
+    }
+    @media screen and ( min-width:1200px )
+    {
+        
+        
+    }
+
+}
+
+
+
+.feature__text{ 
+text-align: center;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color:$TitleTextcolor;
+
+@media screen and ( min-width:768px )
+    {
+        
+       
+    }
+
+@media screen and ( min-width:1200px )
+    {
+        
+    }
+}
+
+
+
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  } 
+  

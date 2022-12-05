@@ -1,0 +1,35 @@
+html{ box-sizing: border-box;}
+*,
+*::before,
+*::after {
+  box-sizing:inherit;}
+
+body { 
+
+background-color:$PrimaryWhitecolor;
+color: $TitleTextcolor;
+font-family: 'Roboto',sans-serif;
+letter-spacing: 0.03em;}
+
+ul { padding: 0;
+     margin: 0;
+     list-style: none;}
+
+     a {text-decoration: none;}
+
+h1, h2, h3, h4, h5, h5, p { margin-top: 0;
+margin-bottom: 0;}
+
+
+img{ display: block;
+  width: 100%;}
+
+
+.container{ 
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:15px;
+  padding-right:15px;
+  width: 1200px;
+  
+}
