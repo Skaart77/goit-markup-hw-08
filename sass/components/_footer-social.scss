@@ -7,12 +7,20 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $PrimaryWhitecolor;
+    
+    @media screen and ( min-width:768px ){
+      text-align: left;
+       }
+
+    
     }
 
     
-    .footer-social{ margin-bottom: 60px;
-      @media screen and ( min-width:768px ){
-     margin-left:165px;
+    .footer-social{ 
+      margin-bottom: 60px;
+      
+      @media screen and ( min-width:1200px ){
+     margin-left: 94px;
       }
     }
     

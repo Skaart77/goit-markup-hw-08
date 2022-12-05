@@ -105,6 +105,7 @@ img {
 }
 
 .site-nav {
+  position: relative;
   display: flex;
   margin-left: 93px;
 }
@@ -112,7 +113,7 @@ img {
   margin-left: 50px;
 }
 
-.menu {
+.menu-container .menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -276,7 +277,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .feature__item {
-    width: calc((100% - 30px) / 2);
+    width: 50%;
   }
 }
 .feature__title {
@@ -539,6 +540,11 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-contact__item {
+    text-align: left;
+  }
+}
 .footer-contact {
   margin-bottom: 60px;
 }
@@ -547,6 +553,12 @@ img {
   .footer-nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    display: flex;
   }
 }
 
@@ -595,13 +607,18 @@ img {
   margin-bottom: 20px;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .footer-social__title {
+    text-align: left;
+  }
+}
 
 .footer-social {
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-social {
-    margin-left: 165px;
+    margin-left: 94px;
   }
 }
 
@@ -635,6 +652,16 @@ img {
 .footer-subscription__label {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-subscription__label {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription {
+    margin-left: auto;
+  }
+}
 
 .footer-subscription input {
   width: 450px;
@@ -650,6 +677,13 @@ img {
 }
 .footer-subscription input:hover, .footer-subscription input:focus {
   border-color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription input {
+    display: flex;
+    width: 358px;
+    margin-left: auto;
+  }
 }
 
 .footer-subscription__button {
@@ -674,6 +708,12 @@ img {
 }
 .footer-subscription__button:hover, .footer-subscription__button:focus {
   background-color: #188CE8;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription__button {
+    margin-right: 0;
+    margin-left: 12px;
+  }
 }
 
 .footer-subscription__icon {

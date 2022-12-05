@@ -1,10 +1,18 @@
 .footer-subscription{
   
     &__label{
+      margin-bottom: 20px;
       
-    
-      margin-bottom: 20px;}
+      @media screen and ( min-width:1200px ){
+        display: flex;
+        
+      }
       
+    }
+    @media screen and ( min-width:1200px ){
+      margin-left: auto;
+      
+    }
    }
    
    .footer-subscription input{
@@ -25,6 +33,14 @@
        
        transition: border-color $Cubic;
        &:hover , &:focus{ border-color: $AccentColor;}
+       
+      
+       @media screen and ( min-width:1200px ){
+        display: flex;
+        width: 358px;
+        margin-left: auto;
+        
+      }
        }
    
    
@@ -56,6 +72,11 @@
     transition: background-color $Cubic ; 
     
     &:hover , &:focus{ background-color: $AccentSecondarycolor;}
+
+    @media screen and ( min-width:1200px ){
+      margin-right: 0;
+      margin-left: 12px;
+    }
    }
    
    .footer-subscription__icon{
