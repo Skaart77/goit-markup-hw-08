@@ -607,7 +607,7 @@ img {
   margin-bottom: 20px;
   color: #fff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-social__title {
     text-align: left;
   }
