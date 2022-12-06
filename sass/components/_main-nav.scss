@@ -1,42 +1,34 @@
 
 .main-nav{
-  display: flex;
-  align-items: center;
+  @media screen and ( min-width:768px ){
+    display: flex;
+    align-items: center;
+    
+      }
   
   }
   
   .site-nav{ 
     position: relative;
-    display: flex; 
+    
     margin-left: 93px;
     
   & .site-nav__item + .site-nav__item {
     margin-left: 50px; }
+    
+    @media screen and ( min-width:768px ){
+      display: flex;
+      align-items: center;
+      
+        }
   }
     
-  .menu-container 
-.menu{
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  
-  padding: 20px;
-  background-color:$PrimaryWhitecolor;
-}
+
 
 .site-nav, .site-contact{
  width: 50;
  height: 60;
 }
-
-.menu-toggle{
-  margin-left: auto;
-}
-
-
-
     
 .site-nav .site-nav__link { 
       position: relative;
@@ -69,3 +61,47 @@
   }
       
 .site-nav__link.current { color:$AccentColor;}
+
+
+
+
+
+.menu-toggle{
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-toggle .icon-close {
+  display: none;
+}
+
+.menu{
+  display: none;
+
+}
+.menu-container.is-open .icon-close{
+  display: block;
+
+}
+.menu-container.is-open .menu-icon{
+  display: none;
+
+}
+.mobile-menu .site-nav__link{
+  position: relative;
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      
+      color:$PrimaryTextcolor; 
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      
+      transition: color $Cubic;
+    
+    &:hover , &:focus{ color:$AccentColor;text-decoration: none;}
+}
