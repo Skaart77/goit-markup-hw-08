@@ -327,7 +327,6 @@ img {
 }
 
 .site-contact {
-  margin-right: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -335,6 +334,7 @@ img {
 @media screen and (min-width: 1200px) {
   .site-contact {
     margin-bottom: 10px;
+    margin-left: auto;
     display: flex;
     gap: 40px;
   }
