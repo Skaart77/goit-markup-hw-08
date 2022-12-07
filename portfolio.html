@@ -14,28 +14,69 @@
     </head>
 <body>
 <!--Шапка сайта-->
-    <header class="page-header">
-        <div class="container">
-            
-            <nav class="main-nav">  
-                <a href="./index.html" class="logo">Web<span class="logo__accent">Studio</span></a> 
-           <ul class="site-nav">
-               <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Студія</a></li>
-               <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a></li>
-               <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
-           </ul>
-           <ul class="site-contact">
-            <li class="site-contact__item">
-                <a href="mailto:info@devstudio.com" class="site-contact__link">
-                <svg class="site-contact__icon"  width="16" height="12" ><use href="./images/icons.svg#envelope" ></use></svg>
-                info@devstudio.com</a>
-            </li>
-           <li class="site-contact__item"><a href="tel:+380961111111" class="site-contact__link">
-            <svg class="site-contact__icon" width="10" height="16" ><use href="./images/icons.svg#smartphone" ></use></svg>+380961111111</a></li>
-        </ul>
-           </nav>  
-        </div>
-        </header>
+<header class="header">	
+	<div class="container header-container">
+	<a href="./index.html" class="logo"><span class="logo-part">Web</span>Studio</a>
+	<nav class="container-nav">
+	<ul class="nav">
+	<li class="header-link">
+	<a href="./index.html" class="nav-link ">Студія</a>
+	</li>
+	<li class="header-link">
+	<a href="./portfolio.html" class="nav-link current">Портфоліо</a>
+	</li>
+	<li class="header-link">
+	<a href="#" class="nav-link">Контакти</a>
+	</li>
+	</ul>
+	</nav>
+	<!-- Контакти -->
+	<ul class="nav container-auth">
+	<li class="header-link">
+	<a href="mailto:info@devstudio.com" class="nav-auth">
+	<svg class="header-icons mail-svg">
+	<use href="./images/icons.svg#envelope"></use>
+	</svg>info@devstudio.com</a>
+	</li>
+	<li class="header-link">
+	<a href="tel:+380961111111" class="nav-auth">
+	<svg class="header-icons phone-svg">
+	<use href="./images/icons.svg#smartphone"></use>
+	</svg>
+	+38 096 111 11 11</a>
+	</li>
+	</ul>
+	<button class="burger js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+	<svg class="burger__svg" width="40" height="40" aria-label="вмикач мобільного меню">
+	<use class="burger__menu" href="./images/icons.svg#menu-icon"></use>
+	</svg>
+	</button>
+	</div>
+	<div class="menu-container js-menu-container" id="mobile-menu">
+	<button class="menu-toggle js-close-menu">
+	<svg class="close__svg" width="40" height="40" aria-label="вимикач мобільного меню">
+	<use class="menu-container__close" href="./images/icons.svg#close-black"></use>
+	</svg>
+	</button>
+	<nav class="navigation">
+	<ul class="navigation__list">
+	<li class="navigation__item"><a href="./index.html" class="navigation__link current">Студія</a></li>
+	<li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+	<li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
+	</ul>
+	</nav>
+	<ul class="authorization">
+	<li class="authorization__item"><a href="tel:+380961111111" class="number authorization__link">+38 096 111 11 11</a></li>
+	<li class="authorization__item"><a href="mailto:info@devstudio.com" class="authorization__link">info@devstudio.com</a></li>
+	</ul>
+	<ul class="menu-social">
+	<li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+	<li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+	<li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+	<li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+	</ul>
+	</div>
+</header>
 <main>
     <section class="section-portfolio">
         <div class="container">

@@ -1,16 +1,179 @@
-.page-header{
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
-    min-height: 80px;
-    border-bottom: 1px solid $Bordercolor;
-    background-color: $PrimaryWhitecolor;
-    
-    @media screen and ( min-width:480px ){
-        display: flex;
-        align-items: center;
-        min-height: 60px;
-        
-          }
-   }
+.header {
+  border-bottom: 1px solid $Bordercolor;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-container .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (max-width: 767px) {
+      margin-right: auto;
+  }
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+      display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  padding-left: 0;
+}
+
+.container-auth {
+  @media screen and (max-width: 767px) {
+          display: none;
+      }
+  
+  @media screen and (min-width: 768px) {
+      display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+      display: flex;
+  }
+  
+}
+
+.logo {
+  color: $PrimaryTextcolor;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  margin-right: 87px;
+
+  @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      margin-right: 92px;
+  }
+}
+
+.logo-part {
+  color: $PrimaryTextcolor;
+}
+
+/* nav  */
+
+.nav-auth:hover,
+.nav-link:hover,
+.nav-auth:focus,
+.nav-link:focus {
+  color: $AccentColor;
+}
+
+.nav-link,
+.nav-auth {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color $Cubic;
+}
+
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  transform: translateY(1px);
+
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $AccentColor;
+}
+
+.container-auth .header-link {
+  display: block;
+}
+
+.container-auth {
+  margin-left: auto;
+}
+
+.header-link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.container-auth .header-link:first-child {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+.header-icons {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.mail-svg {
+  @media screen and (max-width: 1199px) {
+      width: 14px;
+      height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+  width: 16px;
+      height: 12px;
+  }
+}
+
+.phone-svg {
+@media screen and (max-width: 1199px) {
+      width: 10px;
+      height: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+  }
+}
+
+.nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  color: $PrimaryTextcolor;
+}
+
+.nav-auth {
+  color: $TitleTextcolor;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  }
+}
+
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  display: blok;
+  width:100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background:$AccentColor;
+
+  border-radius: 2px;
+  }
