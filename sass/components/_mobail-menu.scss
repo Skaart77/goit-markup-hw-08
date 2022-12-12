@@ -25,8 +25,8 @@
   
   .menu-toggle {
       position: absolute;
-      top: 10px;
-      right: 15px;
+      top: 21px;
+      right: 21px;
   
       border: none;
       background-color: transparent;
@@ -42,7 +42,7 @@
   }
   
   .close__svg {
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: fill $Cubic;
   }
   
   .burger {
@@ -59,7 +59,7 @@
   }
   
   .navigation {
-      margin-bottom: 302px;
+      margin-bottom: 290px;
   
       &__link {
               font-weight: 500;
@@ -128,7 +128,7 @@
           }
   
           &:not(:last-child) {
-              border-right: 1px solid rgba(33, 33, 33, 0.2);;
+              border-right: 1px solid rgba(33, 33, 33, 0.2);
           }
       }
   

@@ -23,7 +23,7 @@
     @media screen and ( min-width:768px ){
         display: flex;
         flex-wrap: wrap;
-       
+       gap: 30px;
       }
     
     
@@ -40,12 +40,12 @@
         border: 1px solid $Bordercolor;
         background-color: $PrimaryWhitecolor;
         
-        margin-bottom: 30px;
+  
         
 
         @media screen and ( min-width:768px ){
         width:calc( ( 100% - 30px ) / 2 );
-        margin-right: 30px;
+        
         &:nth-child(2n){margin-right:0;}
         &:nth-last-child(-n + 2){margin-bottom: 0;}
            
@@ -53,7 +53,7 @@
         
           @media screen and ( min-width:1200px ){
             width:calc( ( 100% - 60px ) / 3 );
-            margin-right: 30px;
+           
            
             &:nth-child(3n){margin-right:0;}
             
@@ -100,7 +100,7 @@
           color: $PrimaryWhitecolor;
           padding: 63px 24px;
           
-          transform:translateY(100%);
+          transform:translateY(110%);
           transition: transform $Cubic;
           
           }  

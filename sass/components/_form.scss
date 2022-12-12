@@ -156,4 +156,15 @@ cursor: pointer;
     &:hover{ background-color:$AccentSecondarycolor;}
 
     }
-      
+      .form-consent__text{
+    
+       font-size: 12px;
+       line-height: 1.16;
+        letter-spacing: 0.03em;
+        @media screen and ( min-width:1200px ){
+          font-size: 14px;
+          line-height: 1.7;
+          letter-spacing: 0.03em;
+          
+            }
+      }
